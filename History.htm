@@ -1,0 +1,103 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Cryptography Defined/Brief History</title>
+</head>
+
+<body alink="#B4F000" bgcolor="#FFFFFF" link="#0000FF" text="#000000" vlink="#0000A0">
+
+
+<h2>Cryptography Defined/Brief History</h2>
+<p>If you want to keep information secret, you have two possible 
+strategies: hide the existence of the information, or make the 
+information unintelligible. Cryptography is the art and science of 
+keeping information secure from unintended audiences, of encrypting it. 
+Conversely, cryptanalysis is the art and science of breaking encoded 
+data. The branch of mathematics encompassing both cryptography and 
+cryptanalysis is cryptology.</p>
+
+<p>Modern cryptography uses sophisticated mathematical equations (algorithms) and secret keys to encrypt and decrypt data.<br>
+
+<img src="Crypt/encrypt.gif" alt="Encryption and Decryption">
+</p>
+
+<p>Today, cryptography is used to provide secrecy and integrity to our 
+data, and both authentication and anonymity to our communications.</p>
+
+<h3>Modern Historical Overview</h3>
+<p>Cryptology was a public field in the United States until World War I,
+ when the Army &amp; Navy realized its value to national security and 
+began working in secret. Through the early 1970s, cryptology was 
+dominated by the government both because computers were very expensive 
+and because the government released very little information. It returned
+ to mainstream academic and scientific communities in a sort of 
+cryptology renaissance when the computer revolution made computers more 
+readily available and when demand for encryption increased due to 
+fundamental changes in the ways America communicated. </p>
+
+<p>The increase in demand for cryptography was driven by industry 
+interest (e.g., financial services required secure electronic 
+transactions and businesses needed to secure trade secrets stored on 
+computers), and individual interest (e.g., secure wireless 
+communications). Digital communications were obvious candidates for 
+encryption.</p>
+
+<h3>Principles of Modern Cryptography</h3>
+<p>Modern cryptographers emphasize that security should not depend on 
+the secrecy of the encryption method (or algorithm), only the secrecy of
+ the keys.  The secret keys must not be revealed when plaintext and 
+ciphertext are compared, and no person should have knowledge of the key.
+ Modern algorithms are based on mathematically difficult problems -  for
+ example, prime number factorization, discrete logarithms, etc. There is
+ no mathematical proof that these problems are in fact are hard, just 
+empirical evidence. </p>
+
+<p>Modern cryptographic algorithms are too complex to be executed by 
+humans. Today's algorithms are executed by computers or specialized 
+hardware devices, and in most cases are implemented in computer 
+software. </p>
+
+<p>The design of secure systems using encryption techniques focuses 
+mainly on the protection of (secret) keys.  Keys can be protected either
+ by encrypting them under other keys or by protecting them physically, 
+while the algorithm used to encrypt the data is made public and 
+subjected to intense scrutiny. When cryptographers hit on an effective 
+method of encryption (a cipher), they can patent it as intellectual 
+property and earn royalties when their method is used in commercial 
+products. In the current open environment, many good cryptographic 
+algorithms are available in major bookstores, libraries and on the 
+Internet, or patent office. </p>
+
+<h3>Symmetric and Asymmetric Algorithms</h3>
+<p>There are two types of key-based encryption, symmetric (or 
+secret-key) and asymmetric (or public-key) algorithms. Symmetric 
+algorithms use the same key for encryption and decryption (or the 
+decryption key is easily derived from the encryption key), while 
+asymmetric algorithms use a different key for encryption and decryption,
+ and the decryption key cannot be derived from the encryption key. </p>
+
+<p>Symmetric algorithms can be divided into stream ciphers and block 
+ciphers. Stream ciphers can encrypt a single bit of plaintext at a time,
+ whereas block ciphers take a number of bits (typically 64 bits in 
+modern ciphers), and encrypt them as a single unit. An example of a 
+symmetric algorithm is DES.<br>
+<img src="Crypt/symmetric.gif" alt="Symmetric Encryption with One Key"></p>
+
+<p>Asymmetric ciphers (also called public-key cryptography) make a 
+public key universally available, while only one individual possesses 
+the private key. When data is encrypted with the public key, it can only
+ be decrypted with the private key, and vice versa. Public key 
+cryptography adds a very significant benefit - it can serve to 
+authenticate a source (e.g. a digital signature). Public key 
+cryptography was invented by Whitfield Diffie and Martin Hellman in 
+1975. An example of an asymmetric algorithm is RSA.<br>
+<img src="Crypt/asymmetric.gif" alt="Asymmetric Encryption with Two Keys"></p>
+
+<p>In general, symmetric algorithms execute much faster than asymmetric 
+ones. In real applications, they are often used together, with a 
+public-key algorithm encrypting a randomly generated encryption key, 
+while the random key encrypts the actual message using a symmetric 
+algorithm. This combination is commonly referred to as a digital 
+envelope.</p>
+
+
+</body></html>
